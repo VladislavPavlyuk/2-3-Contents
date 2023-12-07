@@ -4,28 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body {font-size: 10pt; font-family:Arial, Helvetica, sans-serif}
+
+        .a 
+        {            
+            list-style-type: upper-roman; 
+            font-weight: bold; 
+            color:darkblue
+        }
+        .b 
+        {
+            list-style-type: decimal; 
+            font-weight: bold; 
+            color:darkblue
+        }
+        .c 
+        {
+            list-style-type: lower-latin; 
+            font-weight: bold; 
+            color:darkblue
+        }
+        li
+        {            
+            font-weight: normal; 
+            color:darkblue
+        }
+        ol li::marker {
+            font-weight: bold; 
+            color:black
+        }
+    </style>
+
+<title>Document</title>
+    
 </head>
-<body style="font-size: 10pt; font-family:Arial, Helvetica, sans-serif">
+
+
     <h4>Contents</h4>
 
-    <ul style="list-style-type: upper-roman;">
-        <li style="color: #003399">
+    <ol class="a">
+        <li>
             History
-            <ol style="font-weight: normal" start="1">
+            <ol class="b">
                 <li>Development</li>                
                 <li>HTML versions timeline</li>
-                <ol style=list-style-type:lower-latin;>
+                <ol class="c">
                     <li>HTML draft version timeline</li>
                     <li>XHTML versions</li>
                 </ol>
             </ol>
         </li>
-        <li style="color: #003399">
+        <li>
             Markup
-            <ol>
+            <ol class="b">
                 <li>Elements</li>
-                <ol style=list-style-type:lower-latin;>
+                <ol class="c">
                     <li>Element examples</li>
                     <li>Attributes</li>
                 </ol>
@@ -35,48 +69,49 @@
 
             </ol>
         </li>
-        <li style="color: #003399">
+        <li>
             Semantic HTML
         </li>
-        <li style="color: #003399">
+        <li>
             Delivery
-            <ol>
+            <ol class="b">
                 <li>HTTP</li>
                 <li>HTML e-mail</li>
                 <li>Naming conventions</li>
                 <li>HTML Application</li>
             </ol>
         </li>
-        <li style="color: #003399">
+        <li>
             HTML4 variations
-            <ol>
+            <ol class="b">
                 <li>SGML-based versus XML-based HTML</li>
                 <li>Transitional version strict</li>
                 <li>Frameset versus transitional</li>
                 <li>Summary of specification versions</li>
             </ol>
         </li>
-        <li style="color: #003399">
+        <li>
             HTML5 variants
-            <ol>
+            <ol class="b">
                 <li>WARWG HTML versus HTML5</li>
             </ol>
         </li>
-        <li style="color: #003399">
+        <li>
             Hypertext futures not in HTML
-        </li style="color: #003399">
-        <li style="color: #003399">
+        </li>
+        <li>
             WISYWUG Editors
         </li>
-        <li style="color: #003399">            
+        <li>            
             See also
         </li>
-        <li style="color: #003399">
+        <li>
             References
         </li>
-        <li style="color: #003399">
+        <li>
             External links
         </li>
-    </ul>  
+    </ol>  
+    
 </body>
 </html>
